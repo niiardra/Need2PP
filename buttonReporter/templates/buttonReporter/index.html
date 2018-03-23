@@ -96,6 +96,26 @@
                     </div>
                 </div>
 
+                  <table class="table-fill">
+                    <thead>
+                      <tr>
+                        <th class="text-left">Floor</th>
+                        <th class="text-left">Vaccant</th>
+                        <th class="text-left">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-hover">
+                      {% for floor in floors %}
+                      <tr>
+                        <td class="text-left">{{floor.id}}</th>
+                        <td class="text-left">{{floor.availableWashrooms}}</th>
+                        <td class="text-left">{{floor.totalWashrooms}}</th>
+                      </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+
+
                 <div id="firstFloorMap" class="android-customized-section">
                     <div class="android-customized-section-text">
                         <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">1st Floor</div>
@@ -103,24 +123,6 @@
                             This is the 1st floor map
                         </p>-->
                       </div>
-
-                      <div>
-                        <table>
-                          <tr>
-                            <th>Floor</th>
-                            <th>Vaccant</th>
-                            <th>Total</th>
-                          </tr>
-                          {% for floor in floors %}
-                          <tr>
-                            <th>{{floor.id}}</th>
-                            <th>{{floor.availableWashrooms}}</th>
-                            <th>{{floor.totalWashrooms}}</th>
-                          </tr>
-                          {% endfor %}
-                        </table>
-                      </div>
-
                     <div class="android-customized-section-image">
                         <img src="{% static 'images/1st_floor.png' %}"alt="1st floor" height="600px">
                     </div>
