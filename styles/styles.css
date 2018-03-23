@@ -362,6 +362,7 @@ a img{
 
 .android-customized-section {
   text-align: center;
+  height: 700px;
 }
 
 .android-customized-section-text {
@@ -376,9 +377,9 @@ a img{
   }
 
 .android-customized-section-image {
-  background: url('images/devices.jpg') center top no-repeat;
-  background-size: cover;
-  height: 400px;
+  /*background: url('images/devices.jpg') center top no-repeat;
+  background-size: cover;*/
+  /*height: 200px;*/
 }
 
 .android-more-section {
